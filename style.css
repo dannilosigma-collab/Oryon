@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0A0F2C;
+    color: white;
+}
+
+#container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar */
+#sidebar {
+    background-color: #1E3A8A;
+    width: 250px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#sidebar h3 {
+    margin-top: 20px;
+}
+
+#sidebar button {
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px;
+    background-color: #3B5BDB;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#sidebar .logout-btn {
+    background-color: #FF4C4C;
+}
+
+.nick {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Main Area */
+#main-area {
+    flex: 1;
+    padding: 20px;
+    background-color: #0A0F2C;
+    overflow-y: auto;
+}
+
+/* Frames */
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #1E3A8A;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.frame input {
+    width: 80%;
+    margin: 5px 0;
+    padding: 8px;
+    font-size: 14px;
+}
+
+.frame button {
+    margin: 5px 0;
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+}

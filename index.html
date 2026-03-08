@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiniSteam Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <!-- Sidebar -->
+        <div id="sidebar" class="hidden">
+            <div id="player-nick" class="nick"></div>
+            <h3>Menu</h3>
+            <button id="btn-main">Main Menu</button>
+            <button id="btn-settings">Settings</button>
+            <button id="btn-account">Account Info</button>
+            <button id="btn-logout" class="logout-btn">Logout</button>
+        </div>
+
+        <!-- Main Area -->
+        <div id="main-area"></div>
+
+        <!-- Login Frame -->
+        <div id="login-frame" class="frame">
+            <h2 id="login-title">Login</h2>
+            <input id="login-username" placeholder="Username">
+            <input id="login-password" type="password" placeholder="Password">
+            <button id="login-toggle">Show</button>
+            <button id="login-btn">Login</button>
+            <p>No account? <button id="show-register">Create</button></p>
+        </div>
+
+        <!-- Register Frame -->
+        <div id="register-frame" class="frame hidden">
+            <h2 id="register-title">Register</h2>
+            <input id="reg-username" placeholder="Username">
+            <input id="reg-password" type="password" placeholder="Password">
+            <button id="reg-toggle">Show</button>
+            <button id="reg-create-btn">Create</button>
+            <button id="reg-cancel-btn">Cancel</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
